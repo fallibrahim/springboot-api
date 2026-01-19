@@ -4,7 +4,7 @@ spring:
       on-profile: docker
 
   datasource:
-    url: jdbc:postgresql://db:5432/springdb
+    url: ${DATABASE_URL}
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
